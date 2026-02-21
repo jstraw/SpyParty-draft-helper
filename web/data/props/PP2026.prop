@@ -1,0 +1,459 @@
+group quickplays = 
+{
+	group custom_group =
+	{
+		int Version=1
+		string Name ="Penguin Pool 2026"
+		int Locked=1
+		string Description = "With an additional venue set, alongside those featured in Winter Cup 2026. TO'd by Legorve Genine."
+		int Minimal = 1
+		float Priority = 8.1
+	}
+
+
+	//aquarium
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Aquarium - Chocolate"
+		int LevelHash = 0x98e45d99
+		int DurationSeconds = 240
+		int NumGuests = 20
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Aquarium - Mango"
+		int LevelHash = 0x98e45d99
+		int DurationSeconds = 300
+		int NumGuests = 21
+		int GameType = 2
+		int NumNeededMissions = 5
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+	//balcony
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Balcony - Chocolate"
+		int LevelHash = 0x1dbd8e41
+		int DurationSeconds = 120
+		int NumGuests = 7
+		int GameType = 2
+		int NumNeededMissions = 2
+		int NumSelectedMissions = 3
+		int SimpleRules = 0
+		group default_missions = 
+		{
+			strings mission = "bug_ambassador"
+			strings mission = "double_agent"
+			strings mission = "seduction"
+		}
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="PP26 Balcony - Protein"
+		int LevelHash = 0x1dbd8e41
+		int DurationSeconds = 150
+		int NumGuests = 9
+		int GameType = 2
+		int NumNeededMissions = 2
+		int NumSelectedMissions = 4
+		int SimpleRules = 0
+		group prohibited_missions = 
+		{
+			strings mission = "double_agent"
+		}
+	}
+
+
+	//ballroom
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Ballroom - Vanilla"
+		int LevelHash = 0x5b121925
+		int DurationSeconds = 210
+		int NumGuests = 16
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Ballroom - Mango"
+		int LevelHash = 0x5b121925
+		int DurationSeconds = 270
+		int NumGuests = 18
+		int GameType = 2
+		int NumNeededMissions = 5
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+	//courtyard
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Courtyard - Vanilla"
+		int LevelHash = 0x9dc5bb5e
+		int DurationSeconds = 210
+		int NumGuests = 17
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 7
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Courtyard - Strawberry"
+		int LevelHash = 0x9dc5bb5e
+		int DurationSeconds = 165
+		int NumGuests = 15
+		int GameType = 2
+		int NumNeededMissions = 3
+		int NumSelectedMissions = 7
+		int SimpleRules = 0
+	}
+
+
+	//gallery
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Gallery - Vanilla"
+		int LevelHash = 0x7173b8bf
+		int DurationSeconds = 240
+		int NumGuests = 21
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Gallery - Coconut"
+		int LevelHash = 0x7173b8bf
+		int DurationSeconds = 300
+		int NumGuests = 21
+		int GameType = 2
+		int NumNeededMissions = 5
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+	//highrise
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 High-rise - Banana"
+		int LevelHash = 0x1a56c5a1
+		int DurationSeconds = 225
+		int NumGuests = 15
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+		
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 High-rise - Strawberry"
+		int LevelHash = 0x1a56c5a1
+		int DurationSeconds = 195
+		int NumGuests = 12
+		int GameType = 2
+		int NumNeededMissions = 3
+		int NumSelectedMissions = 7
+		int SimpleRules = 0
+		group default_missions = 
+		{
+			strings mission = "bug_ambassador"
+			strings mission = "double_agent"
+			strings mission = "inspect_statues"
+			strings mission = "seduction"
+			strings mission = "purloin_guestlist"
+			strings mission = "fingerprint_ambassador"
+			strings mission = "swap_statue"
+		}
+	}
+
+
+	//library
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Library - Banana"
+		int LevelHash = 0x168f4f62
+		int DurationSeconds = 210
+		int NumGuests = 19
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Library - Mango"
+		int LevelHash = 0x168f4f62
+		int DurationSeconds = 300
+		int NumGuests = 21
+		int GameType = 2
+		int NumNeededMissions = 5
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+	//moderne
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Moderne - Vanilla"
+		int LevelHash = 0x2e37f15b
+		int DurationSeconds = 255
+		int NumGuests = 21
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Moderne - Coconut"
+		int LevelHash = 0x2e37f15b
+		int DurationSeconds = 255
+		int NumGuests = 21
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="PP26 Moderne - Protein"
+		int LevelHash = 0x2e37f15b
+		int DurationSeconds = 180
+		int NumGuests = 21
+		int GameType = 2
+		int NumNeededMissions = 3
+		int NumSelectedMissions = 5
+		int SimpleRules = 0
+	}
+
+
+	//pub
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Pub - Banana"
+		int LevelHash = 0x3b85fff3
+		int DurationSeconds = 255
+		int NumGuests = 19
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 7
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Pub - Strawberry"
+		int LevelHash = 0x3b85fff3
+		int DurationSeconds = 180
+		int NumGuests = 16
+		int GameType = 2
+		int NumNeededMissions = 3
+		int NumSelectedMissions = 7
+		int SimpleRules = 0
+	}
+
+
+	//redwoods
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Redwoods - Chocolate"
+		int LevelHash = 0x35ac5135
+		int DurationSeconds = 210
+		int NumGuests = 14
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="PP26 Redwoods - Protein"
+		int LevelHash = 0x35ac5135
+		int DurationSeconds = 255
+		int NumGuests = 16
+		int GameType = 2
+		int NumNeededMissions = 5
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+	//teien
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Teien - Chocolate"
+		int LevelHash = 0x79dfa0cf
+		int DurationSeconds = 210
+		int NumGuests = 13
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Teien - Coconut"
+		int LevelHash = 0x79dfa0cf
+		int DurationSeconds = 135
+		int NumGuests = 8
+		int GameType = 2
+		int NumNeededMissions = 2
+		int NumSelectedMissions = 4
+		int SimpleRules = 0
+		group prohibited_missions = 
+		{
+			strings mission = "inspect_statues"
+		}
+		group default_missions = 
+		{
+			strings mission = "bug_ambassador"
+			strings mission = "double_agent"
+			strings mission = "seduction"
+			strings mission = "purloin_guestlist"
+		}
+	}
+
+
+	//terrace
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Terrace - Strawberry"
+		int LevelHash = 0x9032ce22
+		int DurationSeconds = 210
+		int NumGuests = 12
+		int GameType = 2
+		int NumNeededMissions = 3
+		int NumSelectedMissions = 7
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Terrace - Coconut"
+		int LevelHash = 0x9032ce22
+		int DurationSeconds = 210
+		int NumGuests = 12
+		int GameType = 2
+		int NumNeededMissions = 3
+		int NumSelectedMissions = 7
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="PP26 Terrace - Protein"
+		int LevelHash = 0x9032ce22
+		int DurationSeconds = 150
+		int NumGuests = 11
+		int GameType = 2
+		int NumNeededMissions = 2
+		int NumSelectedMissions = 3
+		int SimpleRules = 0
+		group prohibited_missions = 
+		{
+			strings mission = "inspect_statues"
+		}
+		group default_missions = 
+		{
+			strings mission = "bug_ambassador"
+			strings mission = "double_agent"
+			strings mission = "seduction"
+			strings mission = "purloin_guestlist"
+			strings mission = "fingerprint_ambassador"
+		}
+	}
+
+
+	//veranda
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Veranda - Banana"
+		int LevelHash = 0x6F81A558
+		int DurationSeconds = 210
+		int NumGuests = 19
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="Penguin Pool 2026"
+		string Name="WC26 Veranda - Mango"
+		int LevelHash = 0x6F81A558
+		int DurationSeconds = 300
+		int NumGuests = 21
+		int GameType = 2
+		int NumNeededMissions = 5
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+}

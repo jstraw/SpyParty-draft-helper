@@ -1,0 +1,42 @@
+{
+    "contests": {
+        "Winter Cup 2026": {
+            "emote": "snowflake",
+            "props": "WC26.prop",
+            "rounds": 12,
+            "draft": [
+                "coinflip",
+                "pick-venueset",
+                "ban-venue"
+            ],
+            "venueset": [
+                "Chocolate",
+                "Banana",
+                "Vanilla",
+                "Strawberry",
+                "Mango",
+                "Coconut"
+            ]
+        },
+        "Penguin Pool 2026": {
+            "emote": "penguin",
+            "props": "PP2026.prop",
+            "rounds": 12,
+            "draft": [
+                "coinflip",
+                "ban-venueset",
+                "pick-venueset",
+                "ban-venue"
+            ],
+            "venueset": [
+                "Chocolate",
+                "Banana",
+                "Vanilla",
+                "Strawberry",
+                "Mango",
+                "Coconut",
+                "Protein"
+            ]
+        }
+    }
+}

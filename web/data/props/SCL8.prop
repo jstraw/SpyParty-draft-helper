@@ -1,0 +1,248 @@
+group quickplays = 
+{
+	group custom_group =
+	{
+		int Version=1
+		string Name ="SCL8"
+		int Locked=1
+		string Description = "These competitive venue setups are featured in the 8th season of the SpyParty Competitive League in 2025.  Find details and discussion in the #scl_discussion of the official Discord.\n\nNebula leads the return of SCL as T.O."
+		int Minimal = 1
+		float Priority = 7.99
+	}
+
+	//aquarium
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="Aquarium"
+		int LevelHash = 0x98e45d99
+		int DurationSeconds = 240
+		int NumGuests = 20
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+	//balcony
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="Balcony"
+		int LevelHash = 0x1dbd8e41
+		int DurationSeconds = 120
+		int NumGuests = 7
+		int GameType = 2
+		int NumNeededMissions = 2
+		int NumSelectedMissions = 3
+		int SimpleRules = 0
+	}
+
+
+	//ballroom
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="Ballroom"
+		int LevelHash = 0x5b121925
+		int DurationSeconds = 210
+		int NumGuests = 16
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+	//courtyard
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="Courtyard"
+		int LevelHash = 0x9dc5bb5e
+		int DurationSeconds = 210
+		int NumGuests = 17
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 7
+		int SimpleRules = 0
+	}
+
+
+	//gallery
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="Gallery"
+		int LevelHash = 0x7173b8bf
+		int DurationSeconds = 240
+		int NumGuests = 21
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+	//highrise
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="High-rise (Swap)"
+		int LevelHash = 0x1a56c5a1
+		int DurationSeconds = 195
+		int NumGuests = 12
+		int GameType = 2
+		int NumNeededMissions = 3
+		int NumSelectedMissions = 6
+		int SimpleRules = 0
+		group required_missions = 
+		{
+			strings mission = "swap_statue"
+			
+		}
+	}
+
+
+	//highrise
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="High-rise (Transfer)"
+		int LevelHash = 0x1a56c5a1
+		int DurationSeconds = 195
+		int NumGuests = 12
+		int GameType = 2
+		int NumNeededMissions = 3
+		int NumSelectedMissions = 6
+		int SimpleRules = 0
+		group required_missions = 
+		{
+			strings mission = "transfer_microfilm"
+			
+		}
+	}
+
+
+	//library
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="Library"
+		int LevelHash = 0x168f4f62
+		int DurationSeconds = 285
+		int NumGuests = 21
+		int GameType = 2
+		int NumNeededMissions = 5
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+	//moderne
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="Moderne"
+		int LevelHash = 0x2e37f15b
+		int DurationSeconds = 255
+		int NumGuests = 21
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+	//pub
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="Pub"
+		int LevelHash = 0x3b85fff3
+		int DurationSeconds = 180
+		int NumGuests = 16
+		int GameType = 2
+		int NumNeededMissions = 3
+		int NumSelectedMissions = 7
+		int SimpleRules = 0
+	}
+
+
+	//redwoods
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="Redwoods"
+		int LevelHash = 0x35ac5135
+		int DurationSeconds = 210
+		int NumGuests = 14
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+	//teien
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="Teien"
+		int LevelHash = 0x79dfa0cf
+		int DurationSeconds = 210
+		int NumGuests = 13
+		int GameType = 2
+		int NumNeededMissions = 4
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+	//terrace
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="Terrace"
+		int LevelHash = 0x9032ce22
+		int DurationSeconds = 210
+		int NumGuests = 12
+		int GameType = 2
+		int NumNeededMissions = 3
+		int NumSelectedMissions = 7
+		int SimpleRules = 0
+	}
+
+
+	//veranda
+	group quickplay =
+	{
+		int Version=1
+		string CustomGroup="SCL8"
+		string Name="Veranda"
+		int LevelHash = 0x6F81A558
+		int DurationSeconds = 285
+		int NumGuests = 21
+		int GameType = 2
+		int NumNeededMissions = 5
+		int NumSelectedMissions = 8
+		int SimpleRules = 0
+	}
+
+
+}
+

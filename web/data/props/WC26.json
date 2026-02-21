@@ -1,0 +1,333 @@
+{
+  "quickplays": {
+    "custom_group": {
+      "Version": 1,
+      "Name": "Winter Cup 2026",
+      "Locked": 1,
+      "Description": "These are the venue setups used in the SpyParty Winter Cup 2026. The event is organized by Nebula this year.\\n\\nSee the SpyParty discord at discord.gg/spyparty for more info.",
+      "Minimal": 1
+    },
+    "quickplay": {
+      "venue0": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Aquarium - Chocolate",
+        "LevelHash": 2565103001,
+        "DurationSeconds": 240,
+        "NumGuests": 20,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue1": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Aquarium - Mango",
+        "LevelHash": 2565103001,
+        "DurationSeconds": 300,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 5,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue2": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Balcony - Chocolate",
+        "LevelHash": 498961985,
+        "DurationSeconds": 120,
+        "NumGuests": 7,
+        "GameType": 2,
+        "NumNeededMissions": 2,
+        "NumSelectedMissions": 3,
+        "SimpleRules": 0,
+        "default_missions": {
+          "mission": [
+            "bug_ambassador",
+            "double_agent",
+            "seduction"
+          ]
+        }
+      },
+      "venue3": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Ballroom - Vanilla",
+        "LevelHash": 1527912741,
+        "DurationSeconds": 210,
+        "NumGuests": 16,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue4": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Ballroom - Mango",
+        "LevelHash": 1527912741,
+        "DurationSeconds": 270,
+        "NumGuests": 18,
+        "GameType": 2,
+        "NumNeededMissions": 5,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue5": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Courtyard - Vanilla",
+        "LevelHash": 2646981470,
+        "DurationSeconds": 210,
+        "NumGuests": 17,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 7,
+        "SimpleRules": 0
+      },
+      "venue6": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Courtyard - Strawberry",
+        "LevelHash": 2646981470,
+        "DurationSeconds": 165,
+        "NumGuests": 15,
+        "GameType": 2,
+        "NumNeededMissions": 3,
+        "NumSelectedMissions": 7,
+        "SimpleRules": 0
+      },
+      "venue7": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Gallery - Vanilla",
+        "LevelHash": 1903409343,
+        "DurationSeconds": 240,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue8": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Gallery - Coconut",
+        "LevelHash": 1903409343,
+        "DurationSeconds": 300,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 5,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue9": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 High-rise - Banana",
+        "LevelHash": 441894305,
+        "DurationSeconds": 225,
+        "NumGuests": 15,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue10": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 High-rise - Strawberry",
+        "LevelHash": 441894305,
+        "DurationSeconds": 195,
+        "NumGuests": 12,
+        "GameType": 2,
+        "NumNeededMissions": 3,
+        "NumSelectedMissions": 7,
+        "SimpleRules": 0,
+        "default_missions": {
+          "mission": [
+            "bug_ambassador",
+            "double_agent",
+            "inspect_statues",
+            "seduction",
+            "purloin_guestlist",
+            "fingerprint_ambassador",
+            "swap_statue"
+          ]
+        }
+      },
+      "venue11": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Library - Banana",
+        "LevelHash": 378490722,
+        "DurationSeconds": 210,
+        "NumGuests": 19,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue12": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Library - Mango",
+        "LevelHash": 378490722,
+        "DurationSeconds": 300,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 5,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue13": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Moderne - Vanilla",
+        "LevelHash": 775418203,
+        "DurationSeconds": 255,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue14": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Moderne - Coconut",
+        "LevelHash": 775418203,
+        "DurationSeconds": 255,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue15": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Pub - Banana",
+        "LevelHash": 998637555,
+        "DurationSeconds": 255,
+        "NumGuests": 19,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 7,
+        "SimpleRules": 0
+      },
+      "venue16": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Pub - Strawberry",
+        "LevelHash": 998637555,
+        "DurationSeconds": 180,
+        "NumGuests": 16,
+        "GameType": 2,
+        "NumNeededMissions": 3,
+        "NumSelectedMissions": 7,
+        "SimpleRules": 0
+      },
+      "venue17": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Redwoods - Chocolate",
+        "LevelHash": 900485429,
+        "DurationSeconds": 210,
+        "NumGuests": 14,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue18": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Teien - Chocolate",
+        "LevelHash": 2044698831,
+        "DurationSeconds": 210,
+        "NumGuests": 13,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue19": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Teien - Coconut",
+        "LevelHash": 2044698831,
+        "DurationSeconds": 135,
+        "NumGuests": 8,
+        "GameType": 2,
+        "NumNeededMissions": 2,
+        "NumSelectedMissions": 4,
+        "SimpleRules": 0,
+        "prohibited_missions": {
+          "mission": [
+            "inspect_statues"
+          ]
+        },
+        "default_missions": {
+          "mission": [
+            "bug_ambassador",
+            "double_agent",
+            "seduction",
+            "purloin_guestlist"
+          ]
+        }
+      },
+      "venue20": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Terrace - Strawberry",
+        "LevelHash": 2419248674,
+        "DurationSeconds": 210,
+        "NumGuests": 12,
+        "GameType": 2,
+        "NumNeededMissions": 3,
+        "NumSelectedMissions": 7,
+        "SimpleRules": 0
+      },
+      "venue21": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Terrace - Coconut",
+        "LevelHash": 2419248674,
+        "DurationSeconds": 210,
+        "NumGuests": 12,
+        "GameType": 2,
+        "NumNeededMissions": 3,
+        "NumSelectedMissions": 7,
+        "SimpleRules": 0
+      },
+      "venue22": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Veranda - Banana",
+        "LevelHash": 1870767448,
+        "DurationSeconds": 210,
+        "NumGuests": 19,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue23": {
+        "Version": 1,
+        "CustomGroup": "Winter Cup 2026",
+        "Name": "WC26 Veranda - Mango",
+        "LevelHash": 1870767448,
+        "DurationSeconds": 300,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 5,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      }
+    },
+    "venue0": {}
+  }
+}
