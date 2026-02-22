@@ -1,14 +1,14 @@
 {
-  "custom_group": {
-    "Version": 1,
-    "Name": "Penguin Pool 2026",
-    "Locked": 1,
-    "Description": "With an additional venue set, alongside those featured in Winter Cup 2026. TO'd by Legorve Genine.",
-    "Minimal": 1
-  },
-  "venuesets": {
-    "Chocolate": {
-      "Aquarium": {
+  "quickplays": {
+    "custom_group": {
+      "Version": 1,
+      "Name": "Penguin Pool 2026",
+      "Locked": 1,
+      "Description": "With an additional venue set, alongside those featured in Winter Cup 2026. TO'd by Legorve Genine.",
+      "Minimal": 1
+    },
+    "quickplay": {
+      "venue0": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
         "Name": "WC26 Aquarium - Chocolate",
@@ -20,7 +20,19 @@
         "NumSelectedMissions": 8,
         "SimpleRules": 0
       },
-      "Balcony": {
+      "venue1": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "WC26 Aquarium - Mango",
+        "LevelHash": 2565103001,
+        "DurationSeconds": 300,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 5,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue2": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
         "Name": "WC26 Balcony - Chocolate",
@@ -39,83 +51,7 @@
           ]
         }
       },
-      "Redwoods": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Redwoods - Chocolate",
-        "LevelHash": 900485429,
-        "DurationSeconds": 210,
-        "NumGuests": 14,
-        "GameType": 2,
-        "NumNeededMissions": 4,
-        "NumSelectedMissions": 8,
-        "SimpleRules": 0
-      },
-      "Teien": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Teien - Chocolate",
-        "LevelHash": 2044698831,
-        "DurationSeconds": 210,
-        "NumGuests": 13,
-        "GameType": 2,
-        "NumNeededMissions": 4,
-        "NumSelectedMissions": 8,
-        "SimpleRules": 0
-      }
-    },
-    "Mango": {
-      "Aquarium": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Aquarium - Mango",
-        "LevelHash": 2565103001,
-        "DurationSeconds": 300,
-        "NumGuests": 21,
-        "GameType": 2,
-        "NumNeededMissions": 5,
-        "NumSelectedMissions": 8,
-        "SimpleRules": 0
-      },
-      "Ballroom": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Ballroom - Mango",
-        "LevelHash": 1527912741,
-        "DurationSeconds": 270,
-        "NumGuests": 18,
-        "GameType": 2,
-        "NumNeededMissions": 5,
-        "NumSelectedMissions": 8,
-        "SimpleRules": 0
-      },
-      "Library": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Library - Mango",
-        "LevelHash": 378490722,
-        "DurationSeconds": 300,
-        "NumGuests": 21,
-        "GameType": 2,
-        "NumNeededMissions": 5,
-        "NumSelectedMissions": 8,
-        "SimpleRules": 0
-      },
-      "Veranda": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Veranda - Mango",
-        "LevelHash": 1870767448,
-        "DurationSeconds": 300,
-        "NumGuests": 21,
-        "GameType": 2,
-        "NumNeededMissions": 5,
-        "NumSelectedMissions": 8,
-        "SimpleRules": 0
-      }
-    },
-    "Protein": {
-      "Balcony": {
+      "venue3": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
         "Name": "PP26 Balcony - Protein",
@@ -132,59 +68,7 @@
           ]
         }
       },
-      "Moderne": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "PP26 Moderne - Protein",
-        "LevelHash": 775418203,
-        "DurationSeconds": 180,
-        "NumGuests": 21,
-        "GameType": 2,
-        "NumNeededMissions": 3,
-        "NumSelectedMissions": 5,
-        "SimpleRules": 0
-      },
-      "Redwoods": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "PP26 Redwoods - Protein",
-        "LevelHash": 900485429,
-        "DurationSeconds": 255,
-        "NumGuests": 16,
-        "GameType": 2,
-        "NumNeededMissions": 5,
-        "NumSelectedMissions": 8,
-        "SimpleRules": 0
-      },
-      "Terrace": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "PP26 Terrace - Protein",
-        "LevelHash": 2419248674,
-        "DurationSeconds": 150,
-        "NumGuests": 11,
-        "GameType": 2,
-        "NumNeededMissions": 2,
-        "NumSelectedMissions": 3,
-        "SimpleRules": 0,
-        "prohibited_missions": {
-          "mission": [
-            "inspect_statues"
-          ]
-        },
-        "default_missions": {
-          "mission": [
-            "bug_ambassador",
-            "double_agent",
-            "seduction",
-            "purloin_guestlist",
-            "fingerprint_ambassador"
-          ]
-        }
-      }
-    },
-    "Vanilla": {
-      "Ballroom": {
+      "venue4": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
         "Name": "WC26 Ballroom - Vanilla",
@@ -196,7 +80,19 @@
         "NumSelectedMissions": 8,
         "SimpleRules": 0
       },
-      "Courtyard": {
+      "venue5": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "WC26 Ballroom - Mango",
+        "LevelHash": 1527912741,
+        "DurationSeconds": 270,
+        "NumGuests": 18,
+        "GameType": 2,
+        "NumNeededMissions": 5,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue6": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
         "Name": "WC26 Courtyard - Vanilla",
@@ -208,33 +104,7 @@
         "NumSelectedMissions": 7,
         "SimpleRules": 0
       },
-      "Gallery": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Gallery - Vanilla",
-        "LevelHash": 1903409343,
-        "DurationSeconds": 240,
-        "NumGuests": 21,
-        "GameType": 2,
-        "NumNeededMissions": 4,
-        "NumSelectedMissions": 8,
-        "SimpleRules": 0
-      },
-      "Moderne": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Moderne - Vanilla",
-        "LevelHash": 775418203,
-        "DurationSeconds": 255,
-        "NumGuests": 21,
-        "GameType": 2,
-        "NumNeededMissions": 4,
-        "NumSelectedMissions": 8,
-        "SimpleRules": 0
-      }
-    },
-    "Strawberry": {
-      "Courtyard": {
+      "venue7": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
         "Name": "WC26 Courtyard - Strawberry",
@@ -246,7 +116,43 @@
         "NumSelectedMissions": 7,
         "SimpleRules": 0
       },
-      "High-rise": {
+      "venue8": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "WC26 Gallery - Vanilla",
+        "LevelHash": 1903409343,
+        "DurationSeconds": 240,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue9": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "WC26 Gallery - Coconut",
+        "LevelHash": 1903409343,
+        "DurationSeconds": 300,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 5,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue10": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "WC26 High-rise - Banana",
+        "LevelHash": 441894305,
+        "DurationSeconds": 225,
+        "NumGuests": 15,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue11": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
         "Name": "WC26 High-rise - Strawberry",
@@ -269,37 +175,23 @@
           ]
         }
       },
-      "Pub": {
+      "venue12": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Pub - Strawberry",
-        "LevelHash": 998637555,
-        "DurationSeconds": 180,
-        "NumGuests": 16,
+        "Name": "WC26 Library - Banana",
+        "LevelHash": 378490722,
+        "DurationSeconds": 210,
+        "NumGuests": 19,
         "GameType": 2,
-        "NumNeededMissions": 3,
-        "NumSelectedMissions": 7,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
         "SimpleRules": 0
       },
-      "Terrace": {
+      "venue13": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Terrace - Strawberry",
-        "LevelHash": 2419248674,
-        "DurationSeconds": 210,
-        "NumGuests": 12,
-        "GameType": 2,
-        "NumNeededMissions": 3,
-        "NumSelectedMissions": 7,
-        "SimpleRules": 0
-      }
-    },
-    "Coconut": {
-      "Gallery": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Gallery - Coconut",
-        "LevelHash": 1903409343,
+        "Name": "WC26 Library - Mango",
+        "LevelHash": 378490722,
         "DurationSeconds": 300,
         "NumGuests": 21,
         "GameType": 2,
@@ -307,7 +199,19 @@
         "NumSelectedMissions": 8,
         "SimpleRules": 0
       },
-      "Moderne": {
+      "venue14": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "WC26 Moderne - Vanilla",
+        "LevelHash": 775418203,
+        "DurationSeconds": 255,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue15": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
         "Name": "WC26 Moderne - Coconut",
@@ -319,7 +223,79 @@
         "NumSelectedMissions": 8,
         "SimpleRules": 0
       },
-      "Teien": {
+      "venue16": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "PP26 Moderne - Protein",
+        "LevelHash": 775418203,
+        "DurationSeconds": 180,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 3,
+        "NumSelectedMissions": 5,
+        "SimpleRules": 0
+      },
+      "venue17": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "WC26 Pub - Banana",
+        "LevelHash": 998637555,
+        "DurationSeconds": 255,
+        "NumGuests": 19,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 7,
+        "SimpleRules": 0
+      },
+      "venue18": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "WC26 Pub - Strawberry",
+        "LevelHash": 998637555,
+        "DurationSeconds": 180,
+        "NumGuests": 16,
+        "GameType": 2,
+        "NumNeededMissions": 3,
+        "NumSelectedMissions": 7,
+        "SimpleRules": 0
+      },
+      "venue19": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "WC26 Redwoods - Chocolate",
+        "LevelHash": 900485429,
+        "DurationSeconds": 210,
+        "NumGuests": 14,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue20": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "PP26 Redwoods - Protein",
+        "LevelHash": 900485429,
+        "DurationSeconds": 255,
+        "NumGuests": 16,
+        "GameType": 2,
+        "NumNeededMissions": 5,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue21": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "WC26 Teien - Chocolate",
+        "LevelHash": 2044698831,
+        "DurationSeconds": 210,
+        "NumGuests": 13,
+        "GameType": 2,
+        "NumNeededMissions": 4,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
+      },
+      "venue22": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
         "Name": "WC26 Teien - Coconut",
@@ -344,7 +320,19 @@
           ]
         }
       },
-      "Terrace": {
+      "venue23": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "WC26 Terrace - Strawberry",
+        "LevelHash": 2419248674,
+        "DurationSeconds": 210,
+        "NumGuests": 12,
+        "GameType": 2,
+        "NumNeededMissions": 3,
+        "NumSelectedMissions": 7,
+        "SimpleRules": 0
+      },
+      "venue24": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
         "Name": "WC26 Terrace - Coconut",
@@ -355,46 +343,34 @@
         "NumNeededMissions": 3,
         "NumSelectedMissions": 7,
         "SimpleRules": 0
-      }
-    },
-    "Banana": {
-      "High-rise": {
+      },
+      "venue25": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 High-rise - Banana",
-        "LevelHash": 441894305,
-        "DurationSeconds": 225,
-        "NumGuests": 15,
+        "Name": "PP26 Terrace - Protein",
+        "LevelHash": 2419248674,
+        "DurationSeconds": 150,
+        "NumGuests": 11,
         "GameType": 2,
-        "NumNeededMissions": 4,
-        "NumSelectedMissions": 8,
-        "SimpleRules": 0
+        "NumNeededMissions": 2,
+        "NumSelectedMissions": 3,
+        "SimpleRules": 0,
+        "prohibited_missions": {
+          "mission": [
+            "inspect_statues"
+          ]
+        },
+        "default_missions": {
+          "mission": [
+            "bug_ambassador",
+            "double_agent",
+            "seduction",
+            "purloin_guestlist",
+            "fingerprint_ambassador"
+          ]
+        }
       },
-      "Library": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Library - Banana",
-        "LevelHash": 378490722,
-        "DurationSeconds": 210,
-        "NumGuests": 19,
-        "GameType": 2,
-        "NumNeededMissions": 4,
-        "NumSelectedMissions": 8,
-        "SimpleRules": 0
-      },
-      "Pub": {
-        "Version": 1,
-        "CustomGroup": "Penguin Pool 2026",
-        "Name": "WC26 Pub - Banana",
-        "LevelHash": 998637555,
-        "DurationSeconds": 255,
-        "NumGuests": 19,
-        "GameType": 2,
-        "NumNeededMissions": 4,
-        "NumSelectedMissions": 7,
-        "SimpleRules": 0
-      },
-      "Veranda": {
+      "venue26": {
         "Version": 1,
         "CustomGroup": "Penguin Pool 2026",
         "Name": "WC26 Veranda - Banana",
@@ -405,7 +381,20 @@
         "NumNeededMissions": 4,
         "NumSelectedMissions": 8,
         "SimpleRules": 0
+      },
+      "venue27": {
+        "Version": 1,
+        "CustomGroup": "Penguin Pool 2026",
+        "Name": "WC26 Veranda - Mango",
+        "LevelHash": 1870767448,
+        "DurationSeconds": 300,
+        "NumGuests": 21,
+        "GameType": 2,
+        "NumNeededMissions": 5,
+        "NumSelectedMissions": 8,
+        "SimpleRules": 0
       }
-    }
+    },
+    "venue0": {}
   }
 }

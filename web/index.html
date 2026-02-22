@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lumiere's SpyParty Drafting Tool</title>
+        <script src="js/import.js"></script>
+        <link rel="style.css" />
+    </head>
+    
+    <body>
+        <h1>Lumiere's SpyParty Drafting Tool</h1>
+        <p id="status"></p>
+        <p>Most of this form is dynamic, dropdowns update from top to bottom as you fill in data.  <em>Use Ctrl-F5 to fully reset form if needed</em></p>
+        <form>
+            <p>
+            <label for="competition">Competition</label>:
+            <select name="competition" id="competition" onchange="update_venuesets();">
+                <option value="NONE" selected>Select a Competition</option>
+            </select>
+            </p>
+
+            <p><label for="player1">Player 1</label>: 
+            <input type="text" name="player1" id="player1" required onchange="update_player(1);"/>
+            <label for="player2">Player 2</label>: 
+            <input type="text" name="player2" id="player2" required onchange="update_player(2);"/><br></p>
+
+            <hr />
+            <h3>Determine Order</h3>
+                <p>Depending on rules, coinflip for choices or not, below 1 is Player 1 | 1 or above is Player 2</p>
+            <p><input type="button" name="coinflip" id="coinflip" value="Flip a Coin" onclick="roll_the_dice();"/></p>
+            
+            <p>Or select player to choose on first question: 
+            <select name="whoisplayerA" id="whoisplayerA" onchange="document.getElementById('nosideorban_opt').textContent = `${document.getElementById('whoisplayerA').value} Chooses spy/sniper or pick/ban:`;">
+                <option value="nope" id="noplayer_opt" selected>Choose A Player (or flip)</option>
+                <option value="player1" id="player1_opt">Player 1</option>
+                <option value="player1" id="player2_opt">Player 2</option>
+            </select>
+            </p>
+            <input type="hidden" name="firstchoice" id="firstchoice" />
+            <input type="hidden" name="secondchoice" id="secondchoice" />
+
+            <p><select name="sideorban" id="sideorban" onchange="set_question_players();">
+                <option value="nope" id="nosideorban_opt" selected>Player Chooses from list:</option>
+                <option value="spysnipe" id="spysnipe_opt">Spy/Snipe Order</option>
+                <option value="pickban" id="pickban_opt">Pick/Ban Order</option>
+            </select></p>
+
+            <p><select name="spyorsnipe" id="spyorsnipe" onchange="set_spy_order();">
+                <option value="nope" id="nospyorsnipe_opt" selected>Player Chooses from list:</option>
+                <option value="spy" id="spy_opt">Spy First</option>
+                <option value="snipe" id="snipe_opt">Snipe First</option>
+            </select></p>
+            <input type="hidden" name="firstspy" id="firstspy" value="" />
+            <input type="hidden" name="firstsnipe" id="firstsnipe" value="" />
+
+            <p><select name="pickorder" id="pickorder" onchange="set_pick_order();">
+                <option value="nope" id="nopickorder_opt" selected>Player Chooses from list:</option>
+                <option value="first" id="pickfirst_opt">Pick/Ban First</option>
+                <option value="second" id="picksecond_opt">Pick/Ban Second</option>
+            </select></p>
+
+            <input type="hidden" name="playerA" id="playerA" />
+            <input type="hidden" name="playerB" id="playerB" />
+            <p>From here, we're not doing any validation for now.</p>
+
+            <label for="venueset_banA" id="label_venueset_banA">Optional Venue Set Ban for Player A</label>
+            <select name="venueset_banA" id="venueset_banA">
+                <option value="NONE" selected>Skip Ban</option>
+            </select><br />
+            <label for="venueset_banB" id="label_venueset_banB">Optional Venue Set Ban for Player B</label>
+            <select name="venueset_banB" id="venueset_banB">
+                <option value="NONE" selected>Skip Ban</option>
+            </select><br /><br />
+            <label for="venueset_pickA" id="label_venueset_pickA">Venue Set Pick for Player A</label>
+            <select name="venueset_pickA" id="venueset_pickA"></select><br />
+            <label for="venueset_pickB" id="label_venueset_pickB">Venue Set Pick for Player B</label>
+            <select name="venueset_pickB" id="venueset_pickB"></select><br /><br />
+
+            <input type="button" name="populate_venues" id="populate_venues" 
+              value="Populate Venues" onclick="do_populate_venues();" /><br /><br />
+                        
+            <label for="venue_banA" id="label_venue_banA">Optional Venue Ban for Player A</label>
+            <select name="venue_banA" id="venue_banA">
+                <option value="NONE" selected>Skip Ban</option>
+            </select><br />
+            <label for="venueset_banB" id="label_venue_banB">Optional Venue Ban for Player B</label>
+            <select name="venue_banB" id="venue_banB">
+                <option value="NONE" selected>Skip Ban</option>
+            </select><br /><br />
+
+
+
+            <input type="button" name="generate" id="generate" value="Generate Draft Text" onclick="generate_draft();">
+            <hr />
+            <textarea rows="15" cols="120" id="draft_text">Competition Draft appears here</textarea>
+
+
+            
+        </form>
+
+    </body>
+
+</html>

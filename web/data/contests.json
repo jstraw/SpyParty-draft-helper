@@ -2,7 +2,7 @@
     "contests": {
         "Winter Cup 2026": {
             "emote": "snowflake",
-            "props": "WC26.prop",
+            "prop": "WC26",
             "rounds": 12,
             "draft": [
                 "coinflip",
@@ -20,7 +20,7 @@
         },
         "Penguin Pool 2026": {
             "emote": "penguin",
-            "props": "PP2026.prop",
+            "prop": "PP2026",
             "rounds": 12,
             "draft": [
                 "coinflip",

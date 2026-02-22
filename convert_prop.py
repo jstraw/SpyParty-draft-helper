@@ -62,8 +62,22 @@ def generate_json_from_props(filename):
                 get_pos(stack, data)[tokens[1]] = []
             get_pos(stack, data)[tokens[1]].append(" ".join(tokens[2:]))
 
-    return data
+    if "SCL" in data["quickplays"]["custom_group"]["Name"]:
+        return data, data
+    cleaned_data = {"custom_group": data["quickplays"]["custom_group"]}
+    cleaned_data["venuesets"] = {}
+    for _, entry in data["quickplays"]["quickplay"].items():
+        print(entry)
+        m, venueset = entry["Name"].split(' - ')
+        if venueset not in cleaned_data["venuesets"]:
+            cleaned_data["venuesets"][venueset] = {}
+        cleaned_data["venuesets"][venueset][m.split()[1]] = entry
+
+    return data, cleaned_data
 
 for f in directory.glob("*.prop"):
+    prop, clean = generate_json_from_props(f)
+    with open(f"{f.parents[0] / f.stem}_full.json", 'w', encoding="UTF-8") as fd:
+        json.dump(prop, fd, indent=2)
     with open(f"{f.parents[0] / f.stem}.json", 'w', encoding="UTF-8") as fd:
-        json.dump(generate_json_from_props(f), fd, indent=2)
+        json.dump(clean, fd, indent=2)
