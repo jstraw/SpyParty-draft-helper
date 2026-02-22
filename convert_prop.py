@@ -2,7 +2,7 @@ import json
 import pathlib
 import re
 
-directory = pathlib.Path("web") / "data" / "props"
+directory = pathlib.Path("docs") / "data" / "props"
 
 
 def get_pos(stack, data):
