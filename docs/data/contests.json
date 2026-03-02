@@ -4,10 +4,16 @@
             "emote": "snowflake",
             "prop": "WC26",
             "rounds": 12,
-            "draft": [
+            "choosefirst": [
                 "coinflip",
-                "pick-venueset",
-                "ban-venue"
+                "override"
+            ],
+            "draft": [
+                "choosefirst",
+                "role",
+                "order",
+                "pick-venueset_AB",
+                "ban-venue_BA"
             ],
             "venueset": [
                 "Chocolate",
@@ -22,11 +28,18 @@
             "emote": "penguin",
             "prop": "PP2026",
             "rounds": 12,
-            "draft": [
+            "choosefirst": [
+                "rating",
                 "coinflip",
-                "ban-venueset",
-                "pick-venueset",
-                "ban-venue"
+                "override"
+            ],
+            "draft": [
+                "choosefirst",
+                "role",
+                "order",
+                "ban-venueset_AB",
+                "pick-venueset_AB",
+                "ban-venue_AB"
             ],
             "venueset": [
                 "Chocolate",

@@ -1,7 +1,29 @@
 var competition_data = {};
 var constants = {};
 
+function clear_status() {
+    set_status("");
+}
+
+function set_status(message) {
+    const status = document.getElementById("status");
+    status.innerHTML = message;
+    console.warn(message);
+}
+
+function session_set_json (key, value) {
+    sessionStorage.setItem(
+        key,
+        JSON.stringify(value)
+    );
+}
+
+function session_get_json (key) {
+    return JSON.parse(sessionStorage.getItem(key));
+}
+
 window.onload = async function() {
+    sessionStorage.clear();
     window.fetch(new Request("data/contests.json")).then((resp) => {
         if (!resp.ok) {
             throw new Error('HTTP error! Status: ${response.status} - ${response.text}');
@@ -9,6 +31,7 @@ window.onload = async function() {
         return resp.json();
     })
     .then((compdata) => {
+        sessionStorage.setItem("competitions", JSON.stringify(compdata["contests"]));
         competition_data = compdata["contests"];
         console.log(compdata);
         var compdropdown = document.getElementById("competition");
@@ -29,7 +52,7 @@ window.onload = async function() {
     })
     console.log(constants);
 }
-
+/*
 function update_venuesets() {
     const competition = document.getElementById("competition").value;
     if (competition == "NONE") {
@@ -269,3 +292,5 @@ function generate_draft() {
 
     document.getElementById("draft_text").value = text;
 }
+
+*/
