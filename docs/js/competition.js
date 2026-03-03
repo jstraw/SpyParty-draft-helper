@@ -25,6 +25,7 @@ document.getElementById("competition").onchange = async function () {
     const cfParagraph = document.getElementById("choosefirst");
     // cleanup choosefirst options
     while (cfParagraph.firstChild) {
+        console.debug(cfParagraph.firstChild);
         cfParagraph.removeChild(cfParagraph.lastChild);
       }
 
