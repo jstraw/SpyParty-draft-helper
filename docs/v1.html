@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>Lumiere's SpyParty Drafting Tool</title>
-        <script src="js/utils.js"></script>
         <script src="js/import.js"></script>
         <link rel="style.css" />
     </head>
@@ -14,29 +13,18 @@
         <form>
             <p>
             <label for="competition">Competition</label>:
-            <select name="competition" id="competition">
+            <select name="competition" id="competition" onchange="update_venuesets();">
                 <option value="NONE" selected>Select a Competition</option>
             </select>
             </p>
 
             <p><label for="player1">Player 1</label>: 
-            <input type="text" name="player1" id="player1" required />
+            <input type="text" name="player1" id="player1" required onchange="update_player(1);"/>
             <label for="player2">Player 2</label>: 
-            <input type="text" name="player2" id="player2" required /> 
-            <input type="button" id="set_players" value="Set Players" /></p>
+            <input type="text" name="player2" id="player2" required onchange="update_player(2);"/><br></p>
 
             <hr />
             <h3>Determine Order</h3>
-            <p id="choosefirst"></p>
-            <p id="whochoosefirst_paragraph"></p>
-            <p id="spysnipe_or_pick_paragraph"></p>
-            <p id="spysnipe_paragraph"></p>
-            <p id="pick_paragraph"></p>
-
-            <h3 id="pick_and_ban_header">Picks and Bans</h3>
-            
-            <!--
-
                 <p>Depending on rules, coinflip for choices or not, below 1 is Player 1 | 1 or above is Player 2</p>
             <p><input type="button" name="coinflip" id="coinflip" value="Flip a Coin" onclick="roll_the_dice();"/></p>
             
@@ -47,9 +35,6 @@
                 <option value="player1" id="player2_opt">Player 2</option>
             </select>
             </p>
-
-            <p id="insertpoint"></p>
-
             <input type="hidden" name="firstchoice" id="firstchoice" />
             <input type="hidden" name="secondchoice" id="secondchoice" />
 
@@ -102,21 +87,16 @@
                 <option value="NONE" selected>Skip Ban</option>
             </select><br /><br />
 
-        -->
+
 
             <input type="button" name="generate" id="generate" value="Generate Draft Text" onclick="generate_draft();">
             <hr />
-            <textarea rows="15" cols="60" id="draft_text">Competition Draft appears here</textarea>
-            <textarea rows="15" cols="60" id="map_playlist">Ordered list of Maps to play</textarea>
+            <textarea rows="15" cols="120" id="draft_text">Competition Draft appears here</textarea>
 
 
             
         </form>
 
-        <script src="js/competition.js"></script>
-        <script src="js/ordering.js"></script>
-        <script src="js/players.js"></script>
-        
     </body>
 
 </html>

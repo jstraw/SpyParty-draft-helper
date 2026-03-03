@@ -50,6 +50,24 @@
                 "Coconut",
                 "Protein"
             ]
+        },
+        "SCL 8": {
+            "emote": "007",
+            "prop": "SCL8",
+            "rounds": 12,
+            "choosefirst": [
+                "coinflip",
+                "override"
+            ],
+            "draft": [
+                "choosefirst",
+                "role",
+                "order",
+                "ban-venue_AB",
+                "restrict-venue_AB",
+                "double-venue_AB",
+                "pick-venue_AB"
+            ]
         }
     }
 }

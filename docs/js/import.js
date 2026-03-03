@@ -258,39 +258,6 @@ function do_populate_venues() {
     return;
 }
 
-function generate_draft() {
-    console.log("Generate Draft Text");
-    let text = "";
-    const competiton = document.getElementById("competition").value;
-    const emote = competition_data[competiton]["emote"];
-    text += `# :${emote}: ${competiton} :${emote}:\n`;
-    text += `## ${document.getElementById('player1').value} vs ${document.getElementById('player2').value}\n\n`;
-    text += `${document.getElementById('whoisplayerA').value} wins coinflip / rankings\n`;
-    text += `${document.getElementById('firstspy').value} will spy first and ${document.getElementById('firstsnipe').value} will snipe first\n`;
-    text += `${document.getElementById('playerA').value} will pick first and ${document.getElementById('playerB').value} will pick second\n`;
 
-    if (document.getElementById('venueset_banA').value != 'NONE') {
-        text += `${document.getElementById('playerA').value} bans the venue pool: ${document.getElementById('venueset_banA').value}\n`;
-    }
-    if (document.getElementById('venueset_banB').value != 'NONE') {
-        text += `${document.getElementById('playerB').value} bans the venue pool: ${document.getElementById('venueset_banB').value}\n`;
-    }
-
-    text += `${document.getElementById('playerA').value} picks the venue pool: ${document.getElementById('venueset_pickA').value}\n`;
-    text += `${document.getElementById('playerB').value} picks the venue pool: ${document.getElementById('venueset_pickB').value}\n`;
-
-    if (document.getElementById('venue_banA').value != 'NONE') {
-        text += `${document.getElementById('playerA').value} bans the venue: ${document.getElementById('venue_banA').value}\n`;
-    }
-    if (document.getElementById('venue_banB').value != 'NONE') {
-        text += `${document.getElementById('playerB').value} bans the venue: ${document.getElementById('venue_banB').value}\n\n\n`;
-    }
-
-    // text += play_order();
-
-    text += "### Results";
-
-    document.getElementById("draft_text").value = text;
-}
 
 */

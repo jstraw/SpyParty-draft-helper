@@ -73,3 +73,45 @@ function spysnipe_or_pick_cb() {
 
 
 }
+
+function spysnipe_cb() {
+    const choice = document.getElementById("spysnipe").value;
+    const player = sessionStorage.getItem("spysnipe_choice");
+    if (choice == "none") {
+        set_status("Choose Spy First or Sniper First");
+        return;
+    }
+    let spy, sniper;
+    if (choice == "spy") {
+        spy = player;
+        sniper = get_other_player(player);
+    } else {
+        spy = get_other_player(player);
+        sniper = player
+    }
+    console.info(`First Spy: ${spy} | First Sniper: ${sniper}`);
+    sessionStorage.setItem("spyfirst", spy);
+    sessionStorage.setItem("snipefirst", sniper);
+    do_populate_venuesets();
+}
+
+function pickorder_cb() {
+    const choice = document.getElementById("pickorder").value;
+    const player = sessionStorage.getItem("pickorder_choice");
+    if (choice == "none") {
+        set_status("Choose Pick First or Pick Second");
+        return;
+    }
+    let first, second;
+    if (choice == "first") {
+        first = player;
+        second = get_other_player(player);
+    } else {
+        first = get_other_player(player);
+        second = player
+    }
+    console.info(`First Pick: ${first} | Second Pick: ${second}`);
+    sessionStorage.setItem("playerA", first);
+    sessionStorage.setItem("playerB", second);
+    do_populate_venuesets();
+}

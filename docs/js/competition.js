@@ -1,15 +1,26 @@
 "use strict";
-document.getElementById("competition").onchange = function () {
+document.getElementById("competition").onchange = async function () {
     if (this.value == "NONE") {
         console.info("Competition is not Set (todo, cleanup)");
         return;
-    }
-
+    }    
     
     sessionStorage.setItem("competition", this.value);
     let venueset = get_competition_value("venueset");
     session_set_json("venueset", venueset);
     console.info(`venueset: ${venueset}`);
+
+    // get the property file into storage
+    var prop = `${get_competition_value("prop")}.json`;
+    console.debug("Prop File: " + prop);
+    const resp = await fetch(new Request("data/props/" + prop));
+    console.debug("Made Request for prop");
+    if (!resp.ok) {
+        console.error(`HTTP error! Status: ${resp.status} - ${resp.text}`);
+        throw new Error(`HTTP error! Status: ${resp.status} - ${resp.text}`);
+    }
+    let resp_text = await resp.text();
+    session_set_json("propdata", JSON.parse(resp_text));
 
     const choosefirst_options = get_competition_value("choosefirst");
     console.info(`Options for First Choice: ${choosefirst_options}`);

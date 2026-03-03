@@ -54,25 +54,34 @@ function coinflip_onclick() {
     
     sessionStorage.setItem("first_player", first);
     sessionStorage.setItem("second_player", second);
+    sessionStorage.setItem("choiceby", "coinflip");
+    sessionStorage.setItem("coinflip_val", coin);
     choose_spysnipe_pick(first);
 
 }
 
 function override_onclick() {
     console.info("In Override onclick");
+    const competition = sessionStorage.getItem("competition");
     const whochoosefirst = document.getElementById("whochoosefirst_paragraph");
     console.info(whochoosefirst.outerHTML);
     const player1 = sessionStorage.getItem("player1");
     const player2 = sessionStorage.getItem("player2");
+    if (!competition || !player1 || !player2) {
+        set_status("Please Enter Competition and Players, then Press Button again");
+        return;
+    }
     let inst = "";
     if (this.value == "Override First Choice") {
         inst = "Choose who will select Role/Pick Order";
+        sessionStorage.setItem("choiceby", "override");
     } else {
         inst = "Choose who has a higher rating";
+        sessionStorage.setItem("choiceby", "rating");
     }
     whochoosefirst.innerHTML = `<span>${inst}</span>
             <select name="whochoosefirst" id="whochoosefirst" onchange="whochoosefirst_choice();">
-                <option value="none" selected></option>
+                <option value="none" selected>Select a Player</option>
                 <option value="player1">${player1}</option>
                 <option value="player2">${player2}</option>
             </select>`;
