@@ -1,7 +1,29 @@
 var competition_data = {};
 var constants = {};
 
+function clear_status() {
+    set_status("");
+}
+
+function set_status(message) {
+    const status = document.getElementById("status");
+    status.innerHTML = message;
+    console.warn(message);
+}
+
+function session_set_json (key, value) {
+    sessionStorage.setItem(
+        key,
+        JSON.stringify(value)
+    );
+}
+
+function session_get_json (key) {
+    return JSON.parse(sessionStorage.getItem(key));
+}
+
 window.onload = async function() {
+    sessionStorage.clear();
     window.fetch(new Request("data/contests.json")).then((resp) => {
         if (!resp.ok) {
             throw new Error('HTTP error! Status: ${response.status} - ${response.text}');
@@ -9,6 +31,7 @@ window.onload = async function() {
         return resp.json();
     })
     .then((compdata) => {
+        sessionStorage.setItem("competitions", JSON.stringify(compdata["contests"]));
         competition_data = compdata["contests"];
         console.log(compdata);
         var compdropdown = document.getElementById("competition");
@@ -29,7 +52,7 @@ window.onload = async function() {
     })
     console.log(constants);
 }
-
+/*
 function update_venuesets() {
     const competition = document.getElementById("competition").value;
     if (competition == "NONE") {
@@ -235,37 +258,6 @@ function do_populate_venues() {
     return;
 }
 
-function generate_draft() {
-    console.log("Generate Draft Text");
-    let text = "";
-    const competiton = document.getElementById("competition").value;
-    const emote = competition_data[competiton]["emote"];
-    text += `# :${emote}: ${competiton} :${emote}:\n`;
-    text += `## ${document.getElementById('player1').value} vs ${document.getElementById('player2').value}\n\n`;
-    text += `${document.getElementById('whoisplayerA').value} wins coinflip / rankings\n`;
-    text += `${document.getElementById('firstspy').value} will spy first and ${document.getElementById('firstsnipe').value} will snipe first\n`;
-    text += `${document.getElementById('playerA').value} will pick first and ${document.getElementById('playerB').value} will pick second\n`;
 
-    if (document.getElementById('venueset_banA').value != 'NONE') {
-        text += `${document.getElementById('playerA').value} bans the venue pool: ${document.getElementById('venueset_banA').value}\n`;
-    }
-    if (document.getElementById('venueset_banB').value != 'NONE') {
-        text += `${document.getElementById('playerB').value} bans the venue pool: ${document.getElementById('venueset_banB').value}\n`;
-    }
 
-    text += `${document.getElementById('playerA').value} picks the venue pool: ${document.getElementById('venueset_pickA').value}\n`;
-    text += `${document.getElementById('playerB').value} picks the venue pool: ${document.getElementById('venueset_pickB').value}\n`;
-
-    if (document.getElementById('venue_banA').value != 'NONE') {
-        text += `${document.getElementById('playerA').value} bans the venue: ${document.getElementById('venue_banA').value}\n`;
-    }
-    if (document.getElementById('venue_banB').value != 'NONE') {
-        text += `${document.getElementById('playerB').value} bans the venue: ${document.getElementById('venue_banB').value}\n\n\n`;
-    }
-
-    // text += play_order();
-
-    text += "### Results";
-
-    document.getElementById("draft_text").value = text;
-}
+*/
