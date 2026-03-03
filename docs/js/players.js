@@ -63,12 +63,16 @@ function coinflip_onclick() {
 function override_onclick() {
     console.info("In Override onclick");
     const competition = sessionStorage.getItem("competition");
+    if (!competition) {
+        set_status("Please Choose a Competition.");
+        return;
+    }
     const whochoosefirst = document.getElementById("whochoosefirst_paragraph");
     console.info(whochoosefirst.outerHTML);
     const player1 = sessionStorage.getItem("player1");
     const player2 = sessionStorage.getItem("player2");
-    if (!competition || !player1 || !player2) {
-        set_status("Please Enter Competition and Players, then Press Button again");
+    if (!player1 || !player2) {
+        set_status("Please Enter Players, then Press Button again");
         return;
     }
     let inst = "";

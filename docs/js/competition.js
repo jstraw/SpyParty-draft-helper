@@ -22,10 +22,15 @@ document.getElementById("competition").onchange = async function () {
     let resp_text = await resp.text();
     session_set_json("propdata", JSON.parse(resp_text));
 
+    const cfParagraph = document.getElementById("choosefirst");
+    // cleanup choosefirst options
+    while (cfParagraph.firstChild) {
+        cfParagraph.removeChild(cfParagraph.lastChild);
+      }
+
+    // configure choosefirst options
     const choosefirst_options = get_competition_value("choosefirst");
     console.info(`Options for First Choice: ${choosefirst_options}`);
-
-    const cfParagraph = document.getElementById("choosefirst");
 
     for (let opt of choosefirst_options) {
         switch (opt) {
