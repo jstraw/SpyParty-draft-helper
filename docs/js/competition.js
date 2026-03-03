@@ -24,10 +24,7 @@ document.getElementById("competition").onchange = async function () {
 
     const cfParagraph = document.getElementById("choosefirst");
     // cleanup choosefirst options
-    while (cfParagraph.firstChild) {
-        console.debug(cfParagraph.firstChild);
-        cfParagraph.removeChild(cfParagraph.lastChild);
-      }
+    cfParagraph.textContent = '';
 
     // configure choosefirst options
     const choosefirst_options = get_competition_value("choosefirst");
